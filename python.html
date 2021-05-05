@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Creature Circuits</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>CCC - Creature Circuits - Python Version!</h1>
+  </header>
+
+  <div id="intro">
+    <p>Resources for the 'Creature Circuits' Creative Computing Club.</p>
+    <p>During this workshop, you will create and code a 'creature' using a BBC micro:bit, some conductive and insulating dough, and some electronic components.</p>
+    <p>To make your own dough at home, follow the instructions at <a href="https://squishycircuits.com/pages/dough-recipes" target="_blank">Squishy Circuits</a>.</p>
+    <p>This page recaps what <a href="https://bit.ly/May21CCC" target="_blank">we discussed as a group</a>.</p>
+    <p>To skip to the examples and ideas, <a href="#extensions">click here</a>.</p>
+    <br>
+  </div>
+
+  <div id="starter" class="left">
+    <h3>Getting started</h3>
+    <p><em><a href="index.html" target="_blank">If you would like to do this activity using MakeCode instead, click here!</a></em></p>
+    <br>
+    <p>Go to <a href="https://python.microbit.org/" target="_blank">the Python editor</a>, then follow the instructions to <a href="https://scienceoxford.github.io/do-your-bit/pair-microbit.html" target="_blank">pair your micro:bit</a>.</p>
+    <p>...</p>
+    <br>
+    <br>
+  </div>
+
+  <div id="led" class="left">
+    <h3>Adding an LED</h3>
+    <img src="https://raw.githubusercontent.com/ScienceOxford/ElecKit/master/images/LED_wiring.JPG" alt="LED wiring photo" width="600px" height="auto">
+    <p>Take a crocodile clip, and connect one end of it to <strong>pin 0</strong> on your micro:bit.</p>
+    <p>Connect the other end of your crocodile clip to the <strong>positive</strong> lead of your LED (the longer one).</p>
+    <p>Connect a second crocodile clip between the <strong>GND pin</strong> on your micro:bit, and the <strong>negative</strong> lead of your LED (the shorter one).</p>
+    <p>Now try out the below code... what happens to your LED?</p>
+    <pre><code>from microbit import *
+
+while True:
+    pin0.write_digital(1)
+    sleep(500)
+    pin0.write_digital(0)
+    sleep(500)</code></pre>
+    <br>
+    <br>
+  </div>
+
+  <div id="dough" class="left">
+    <h3>Making a circuit using dough</h3>
+    <p>Now you have tested your LED circuit, and your code, you can begin to create your creature!</p>
+    <p>...</p>
+    <br>
+  </div>
+
+  <div id="extensions" class="left">
+    <h3>What next?</h3>
+    <p>Get creative with your creature, the links below will help you with a couple of our ideas!</p>
+    <br>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="music-python.html" target="_blank">teach your creature to make sounds</a>
+    <a href="touch-python.html" target="_blank">teach your creature to respond to touch</a>
+    <a href="movement-python.html" target="_blank">teach your to creature respond to movement</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/creature-circuits/" target="_blank">View on GitHub</a>
+  </footer>
+
+</body>
+
+</html>
