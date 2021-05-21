@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Creature Circuits</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Creature Circuits - Making Music</h1>
+  </header>
+
+  <div id="dough" class="left">
+    <h3>Making the circuit</h3>
+    <p>To add sounds to your creature, you will need some additional materials:</p>
+    <ul>
+      <li>Two crocodile clips</li>
+      <li>A buzzer</li>
+      <li>Two jump leads, to help connect it to your dough</li>
+    </ul>
+    <p>Connect the two legs of your buzzer to <strong>pin0 and GND</strong> on your micro:bit.</p>
+    <p class=debugging>If you have an LED connected to pin0, you will need to move it to a different pin (keep it attached to GND though, both things can share this) - remember to change your code to match the new LED pin.</p>
+    <p><strong>Try out the code below using the buzzer and crocodile clips before adding some dough.</strong></p>
+    <img src="https://raw.githubusercontent.com/ScienceOxford/ElecKit/master/images/SPEAKER_wiring.JPG" alt="makecode" width="600px" height="auto">
+    <br>
+  </div>
+
+  <div id="coding" class="left">
+    <h3>Writing the code</h3>
+    <p>Try out the code below, then experiment - where do you want to put it in your program?</p>
+    <p>Scroll down for the Python version!</p>
+    <img src="https://raw.githubusercontent.com/ScienceOxford/ElecKit/master/images/speaker-makecode.PNG" alt="makecode" width="600px" height="auto">
+    <br>
+    <p>If you are using Python, try this code:</p>
+    <pre><code>from microbit import *
+import music
+
+music.play(music.ODE)</code></pre>
+    <br>
+    <p>What other <a href="https://microbit-micropython.readthedocs.io/en/v1.0.1/tutorials/music.html" target="_blank">tunes</a> can you get the micro:bit to play?</p>
+    <p>You can also use Text-to-Speech in Python! Try this:</p>
+    <pre><code>from microbit import *
+import speech
+
+speech.say("hello humans")</code></pre>
+    <br>
+    <p>Unfortunately, speech and music cannot work at the same time.</p>
+    <p>Change the code to say your name, or a funny phrase!</p>
+    </ul>
+    <br>
+  </div>
+
+  <div id="final" class="left">
+    <h3>Final steps</h3>
+    <p>Test out some of the music code and see what you can create.</p>
+    <p>Once you are happy with the code, connect your micro:bit back to your dough creature.</p>
+    <ul>
+      <li>You can use the same GND connection you used before - put the crocodile clip back in the same place.</li>
+      <li>Reconnect your LED by putting a crocodile clip back into that part of the dough.</li>
+      <li>Add a new piece of conductive dough to your creature for the speaker!</li>
+    </ul>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/creature-circuits/" target="_blank">View on GitHub</a>
+  </footer>
+
+</body>
+
+</html>

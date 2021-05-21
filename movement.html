@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Creature Circuits</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <a href="https://scienceoxford.com" target="_blank"><img src=".\images\so_logo.png" alt="Science Oxford Logo" width="400px" height="auto"></a>
+    <h1>Creature Circuits - Responding to Movement</h1>
+  </header>
+
+  <div id="intro" class="left">
+    <h3>Accelerometer</h3>
+    <p>The micro:bit has an <strong>accelerometer</strong> - it knows when it is being moved around.</p>
+    <p>You can, for example, make your creature's LED eyes light up when the micro:bit is shaken!</p>
+    <p>Try the code ideas below, then think about how you could add the accelerometer into your own program.</p>
+    <br>
+  </div>
+
+  <div id="makecode" class="left">
+    <h3>MakeCode</h3>
+    <img src=".\images\makecode-accelerometer.PNG" alt="on shake vs if shake" width="600px" height="auto">
+    <p>These two blocks of code are <em>equivalent</em>.</p>
+    <p>The one on the right can be more useful, because you can use it to build more complex programs</p>
+    <br>
+  </div>
+
+  <div id="python" class="left">
+    <h3>Python</h3>
+    <p>Test out this code:</p>
+    <pre><code>from microbit import *
+
+while True:
+  if accelerometer.was_gesture("shake"):
+    display.show(Image.DUCK)</code></pre>
+    <br>
+    <p>Try these other gestures!</p>
+    <p><code>"up", "down", "left", "right", "face up", "face down", "freefall", "3g", "6g", "8g", "shake"</code></p>
+    <br>
+  </div>
+
+  <nav class="links bg_green">
+    <a href="index.html">Go Back</a>
+  </nav>
+
+  <footer class="links">
+    <a href="https://github.com/ScienceOxford/creature-circuits/" target="_blank">View on GitHub</a>
+  </footer>
+
+</body>
+
+</html>
